@@ -1,0 +1,72 @@
+*ZendTools.txt*  Various useful functions for working in PHP with Zend.
+
+ZendTools                                                    *zend* *ZendTools*
+Last Change: April 6, 2011
+
+|ZendTools-description| Description
+|ZendTools-usage|       Usage
+|ZendTools-contact|     Contact
+|ZendTools-license|     License
+
+===============================================================================
+DESCRIPTION                                             *ZendTools-description*
+
+A simple set of useful functions for working in PHP with Zend.
+
+===============================================================================
+USAGE                                                         *ZendTools-usage*
+
+PrependClassRequireOnce()                           *PrependClassRequireOnce()*
+
+Inserts a `require_once` directive for the class under the cursor that is named
+according to Zend conventions. Zend naming involves prepending a
+pseudo-namespace to the name of each class which also reveals the path to its
+source file (e.g. `Company_Tools_InflectionHelper` should map to
+`Company/Tools/InflectionHelper.php`).
+
+Move the cursor to a class and run `<leader>zo` (*z*end + require_*o*nce) or
+`ZendTools#PrependClassRequireOnce()`. For example, running it for the class
+symbol on the following line:
+
+ $helper = new Company_Tools_InflectionHelper();
+
+Would result in:
+
+ require_once 'Company/Tools/InflectionHelper.php';
+ $helper = new Company_Tools_InflectionHelper();
+
+===============================================================================
+CONTACT                                  *ZendTools-contact* *ZendTools-author*
+
+The author can be reached at:
+ brandur@mutelight.org
+
+Suggestions and feedback are welcome.
+
+===============================================================================
+LICENSE                                                     *ZendTools-license*
+
+ZendTools is released under the MIT license:
+
+Copyright 2011 Brandur Leach. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+The software is provided "as is", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose and noninfringement. In no event shall the
+authors or copyright holders be liable for any claim, damages or other
+liability, whether in an action of contract, tort or otherwise, arising from,
+out of or in connection with the software or the use or other dealings in the
+software.
+
+==============================================================================
+
