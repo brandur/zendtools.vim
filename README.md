@@ -26,7 +26,7 @@ Usage
 
 Inserts a `require_once` directive for the class under the cursor that is named according to Zend conventions. Zend naming involves prepending a pseudo-namespace to the name of each class which also reveals the path to its source file (e.g. `Company_Tools_InflectionHelper` should map to `Company/Tools/InflectionHelper.php`).
 
-Move the cursor to a class and run `<leader>zo` (*z*end + require_*o*nce) or `ZendTools#PrependClassRequireOnce()`. For example, running it for the class symbol on the following line:
+Move the cursor to a class and run `<leader>zo` (**z**end + require_**o**nce) or `ZendTools#PrependClassRequireOnce()`. For example, running it for the class symbol on the following line:
 
  $helper = new Company_Tools_InflectionHelper();
 
