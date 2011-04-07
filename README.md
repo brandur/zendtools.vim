@@ -1,5 +1,5 @@
-README
-======
+ZendTools.vim
+=============
 
 Description
 -----------
